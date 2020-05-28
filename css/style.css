@@ -102,6 +102,15 @@
    opacity: 0.3;
 }
 
+/* features */
+
+.slide-title {
+   font-size: 55px;
+   line-height: 55px;
+   font-weight: 500;
+   color: var(--basic-black);
+}
+
 /* services */
 
 .services-list {
@@ -220,6 +229,53 @@
    color: var(--basic-black);
 }
 
+/* filters */
+
+.filter ul {
+   list-style: none;
+}
+
+.filter legend {
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: var(--basic-black);
+}
+
+.sort-label {
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+   color: var(--basic-black);
+   opacity: 0.3;
+}
+
+.filter-input-sort:checked + .sort-label {
+   opacity: 1;
+} 
+
+.filter-option {
+   line-height: 19px;
+}
+
+.button-gray {
+   line-height: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: var(--basic-black);
+   background-color: var(--basic-light-gray);
+}
+
+.button-gray:hover {
+   background-color: #DFDFDF;
+}
+
+.button-gray:active {
+   background-color: #D5D5D5;
+   color: rgba(0, 0, 0, 0.3);
+}
+
 /* catalog list*/
 
 .catalog-list {
@@ -264,15 +320,15 @@
    color: var(--basic-white);
 }
 
-.page {
-   font-weight: 500;
-   line-height: 18px;
-   color: var(--basic-black);
-   background-color: var(--basic-light-gray);
+.pagination-list {
+   list-style: none;
 }
 
-.page:not([href]) {
+.page-current,
+.page-current:hover,
+.page-current:active {
    background-color: var(--basic-white);
+   color: var(--basic-black);
 }
 
 /* footer-contacts */
