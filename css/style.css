@@ -231,11 +231,12 @@
 
 /* filters */
 
-.filter ul {
+.filter-list,
+.filter-list-sort {
    list-style: none;
 }
 
-.filter legend {
+.filter-legend {
    font-size: 18px;
    line-height: 30px;
    font-weight: bold;
