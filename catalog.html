@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
-<head class="page">
+<head>
    <meta charset="UTF-8">
    <title>Каталог проектов дизайн-студии «Нёрдс»</title>
    <link rel="stylesheet" href="css/normalize.css">
@@ -83,8 +83,8 @@
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Список товаров</h2>
-            <fieldset class="fieldset fieldset-sort">
-               <legend class="filter-legend">Сортировать:</legend>
+            <div class="fieldset fieldset-sort">
+               <h3 class="filter-legend">Сортировать:</h3>
                <ul class="filter-list-sort">
                   <li class="filter-option-sort">
                      <input class="visually-hidden filter-input-sort" type="radio" name="sort" id="filter-price"
@@ -102,9 +102,9 @@
                      <label class="sort-label" for="filter-name">По названию</label>
                   </li>
                </ul>
-            </fieldset>
-            <button type="button" aria-label="Вниз">Вниз</button>
-            <button type="button" aria-label="Вверх">Вверх</button>
+               <button type="button" aria-label="Вниз">Вниз</button>
+               <button type="button" aria-label="Вверх">Вверх</button>
+            </div>
             <ul class="catalog-list">
                <li class="catalog-item">
                   <article class="item">
@@ -220,7 +220,7 @@
                <li><a class="pagination-item page-current button-gray" aria-label="Страница каталога 1">1</a></li>
                <li><a class="pagination-item button-gray" href="#" aria-label="Страница каталога 2">2</a></li>
                <li><a class="pagination-item button-gray" href="#" aria-label="Страница каталога 3">3</a></li>
-               <li><a class="pagination-item button-gray" href="#"
+               <li><a class="button-gray" href="#"
                      aria-label="Переход на следующую страницу каталога">Следующая</a></li>
             </ul>
          </section>

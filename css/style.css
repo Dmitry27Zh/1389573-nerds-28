@@ -385,7 +385,6 @@
 }
 
 .button-gray {
-   line-height: 18px;
    font-weight: 500;
    text-transform: uppercase;
    color: var(--basic-black);
@@ -415,6 +414,11 @@
 
 .fieldset-sort {
    display: flex;
+   justify-content: space-between;
+}
+
+.fieldset-sort .filter-legend {
+   margin: 0;
 }
 
 .filter-list-sort {
@@ -426,6 +430,7 @@
    list-style: none;
    padding: 0;
    margin: 0;
+   margin-top: 48px;
    display: flex;
    flex-wrap: wrap;
 }
@@ -486,7 +491,7 @@
    display: flex;
 }
 
-li:not(:last-child) .pagination-item {
+.pagination-item {
    margin-right: 11px;
    width: 50px;
    height: 50px;
