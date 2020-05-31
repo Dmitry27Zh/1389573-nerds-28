@@ -82,7 +82,7 @@
 }
 
 .container {
-   width: 1200px;
+   width: 1160px;
    padding: 0 10px;
    margin: 0 auto;
 }
@@ -139,11 +139,19 @@
 
 /* features */
 
+.features {
+   background-color: var(--basic-light-gray);
+}
+
 .slide-title {
    font-size: 55px;
    line-height: 55px;
    font-weight: 500;
    color: var(--basic-black);
+}
+
+.slide {
+   display: flex;
 }
 
 /* services */
@@ -382,6 +390,12 @@
    text-transform: uppercase;
    color: var(--basic-black);
    background-color: var(--basic-light-gray);
+   display: inline-block;
+   width: 260px;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   border: none;
 }
 
 .button-gray:hover {
@@ -397,6 +411,15 @@
 
 .catalog {
    margin-left: 140px;
+}
+
+.fieldset-sort {
+   display: flex;
+}
+
+.filter-list-sort {
+   display: flex;
+   width: 360px;
 }
 
 .catalog-list {
@@ -463,8 +486,10 @@
    display: flex;
 }
 
-.pagination-item {
+li:not(:last-child) .pagination-item {
    margin-right: 11px;
+   width: 50px;
+   height: 50px;
 }
 
 .page-current,
