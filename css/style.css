@@ -261,6 +261,7 @@
    text-align: center;
    background-color: var(--basic-red);
    border: none;
+   border-radius: 3px;
 }
 
 .button:hover,
@@ -504,6 +505,7 @@
 }
 
 .button-gray {
+   font: inherit;
    font-weight: 500;
    text-transform: uppercase;
    color: var(--basic-black);
@@ -514,6 +516,7 @@
    line-height: 50px;
    text-align: center;
    border: none;
+   border-radius: 3px;
 }
 
 .button-gray:hover {
@@ -607,11 +610,11 @@
    left: 1px;
    bottom: 0;
    padding-bottom: 44px;
-   
 }
 
 .item:hover {
    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+   border-radius: 0px 0px 5px 5px;
 }
 
 .item:hover .item-content {
@@ -671,8 +674,12 @@
 .page-current,
 .page-current:hover,
 .page-current:active {
+   box-sizing: border-box;
+   line-height: 44px;
    background-color: var(--basic-white);
    color: var(--basic-black);
+   border: 3px solid #DBDBDB;
+   border-radius: 3px;
 }
 
 /* footer-contacts */
