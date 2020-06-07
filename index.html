@@ -32,38 +32,41 @@
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="slider container">
-        <!--Слайдер-->
-        <div></div>
-        <!--Элементы управления слайдером-->
-        <div class="slide">
-          <!--Слайд 1-->
-          <div>
-            <p class="slide-title">Долго, дорого, скрупулезно.</p>
-            <p class="slide-definition">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#">Узнать больше</a>
-          </div>
-          <img src="img/nerds-index-slide1.png" alt="Иллюстрация слайда" width="760" height="431">
+        <ul class="slider-list">
+          <li class="slider-item slide-current">
+            <div class="slide-text">
+              <p class="slide-title">Долго, дорого, скрупулезно.</p>
+              <p class="slide-definition">Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              </p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
+            <img class="slide-picture" src="img/nerds-index-slide1.png" alt="Иллюстрация слайда" width="760" height="431">
+          </li>
+          <li class="slider-item">
+            <div class="slide-text">
+              <p class="slide-title">Любим математику как никто другой</p>
+              <p class="slide-definition">Никакого креатива, только математические формулы для расчета идеальных
+                пропорций
+              </p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
+            <img class="slide-picture" src="img/nerds-index-slide2.png" alt="Иллюстрация слайда" width="760" height="431">
+          </li>
+          <li class="slider-item">
+            <div class="slide-text">
+              <p class="slide-title">Только ночь, только хардкор</p>
+              <p class="slide-definition">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+                начинается.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
+            <img class="slide-picture" src="img/nerds-index-slide3.png" alt="Иллюстрация слайда" width="760" height="431">
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="slider-button slider-button-current" type="button" aria-label="Первый слайд"></button>
+          <button class="slider-button" type="button" aria-label="Второй слайд"></button>
+          <button class="slider-button" type="button" aria-label="Третий слайд"></button>
         </div>
-        <!--
-        <div class="slide">
-          <div>
-            <p class="slide-title">Любим математику как никто другой</p>
-            <p class="slide-definition">Никакого креатива, только математические формулы для расчета идеальных пропорций
-            </p>
-            <a class="button" href="#">Узнать больше</a>
-          </div>
-          <img src="img/nerds-index-slide2.png" alt="Иллюстрация слайда" width="760" height="431">
-        </div>
-        <div class="slide">
-          <div>
-            <p class="slide-title">Только ночь, только хардкор</p>
-            <p class="slide-definition">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
-              начинается.</p>
-            <a class="button" href="#">Узнать больше</a>
-          </div>
-          <img src="img/nerds-index-slide3.png" alt="Иллюстрация слайда" width="760" height="431">
-        </div>
-        -->
       </div>
     </section>
     <section class="services container">
@@ -161,7 +164,7 @@
             <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             <a class="button" href="#">Напишите нам</a>
           </div>
-      </div>
+        </div>
     </section>
     <section class="footer-social container">
       <h2 class="visually-hidden">Социальные сети</h2>

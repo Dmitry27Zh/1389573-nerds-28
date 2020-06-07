@@ -36,47 +36,71 @@
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
                <fieldset class="fieldset">
                   <legend class="filter-legend">Стоимость:</legend>
+                  <div class="range-filter">
+                     <div class="range-controls">
+                        <div class="scale">
+                           <div class="bar" style="width: 30%; margin-left: 20%;"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
+                        <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
+                     </div>
+                     <div class="price-controls">
+                        <label class="min-price">
+                           от <input type="number" name="min-price" tabindex="0" value="0">
+                         </label>
+                         <label class="max-price">
+                           до <input type="number" name="max-price" tabindex="0" value="15000">
+                         </label>
+                     </div>
+                  </div>
                </fieldset>
                <fieldset class="fieldset">
                   <legend class="filter-legend">Сетка:</legend>
                   <ul class="filter-list">
                      <li class="filter-option">
-                        <input class="filter-input" type="radio" name="layout" id="filter-adaptive" value="adaptive"
-                           checked>
-                        <label for="filter-adaptive">Адаптивная</label>
+                        <input class="visually-hidden filter-input-radio" type="radio" name="layout"
+                           id="filter-adaptive" value="adaptive" checked>
+                        <label class="input-label" for="filter-adaptive">Адаптивная</label>
                      </li>
                      <li class="filter-option">
-                        <input class="filter-input" type="radio" name="layout" id="filter-fixed" value="fixed">
-                        <label for="filter-fixed">Фиксированная</label>
+                        <input class="visually-hidden filter-input-radio" type="radio" name="layout" id="filter-fixed"
+                           value="fixed">
+                        <label class="input-label" for="filter-fixed">Фиксированная</label>
                      </li>
                      <li class="filter-option">
-                        <input class="filter-input" type="radio" name="layout" id="filter-flexible" value="flexible">
-                        <label for="filter-flexible">Резиновая</label>
+                        <input class="visually-hidden filter-input-radio" type="radio" name="layout"
+                           id="filter-flexible" value="flexible">
+                        <label class="input-label" for="filter-flexible">Резиновая</label>
                      </li>
                   </ul>
                </fieldset>
                <fieldset class="fieldset">
                   <legend class="filter-legend">Особенности:</legend>
                   <ul class="filter-list">
-                     <li class="filter-option">
-                        <input class="filter-input" type="checkbox" name="slider" id="filter-slider" checked>
-                        <label for="filter-slider">Слайдер</label>
+                     <li class="filter-option ">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider"
+                           id="filter-slider" checked>
+                        <label class="input-label" for="filter-slider">Слайдер</label>
                      </li>
                      <li class="filter-option">
-                        <input class="filter-input" type="checkbox" name="features" id="filter-features">
-                        <label for="filter-features">Блок преимуществ</label>
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features"
+                           id="filter-features">
+                        <label class="input-label" for="filter-features">Блок преимуществ</label>
                      </li>
                      <li class="filter-option">
-                        <input class="filter-input" type="checkbox" name="news" id="filter-news" checked>
-                        <label for="filter-news">Новости</label>
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news"
+                           id="filter-news" checked>
+                        <label class="input-label" for="filter-news">Новости</label>
                      </li>
                      <li class="filter-option">
-                        <input class="filter-input" type="checkbox" name="gallery" id="filter-gallery">
-                        <label for="filter-gallery">Галерея</label>
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery"
+                           id="filter-gallery">
+                        <label class="input-label" for="filter-gallery">Галерея</label>
                      </li>
                      <li class="filter-option">
-                        <input class="filter-input" type="checkbox" name="chart" id="filter-chart">
-                        <label for="filter-chart">Корзина</label>
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chart"
+                           id="filter-chart">
+                        <label class="input-label" for="filter-chart">Корзина</label>
                      </li>
                   </ul>
                </fieldset>
@@ -85,32 +109,26 @@
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Список товаров</h2>
-            <div class="fieldset fieldset-sort">
+            <div class="filter-sort">
                <h3 class="filter-legend">Сортировать:</h3>
                <ul class="filter-list-sort">
                   <li class="filter-option-sort">
-                     <input class="visually-hidden filter-input-sort" type="radio" name="sort" id="filter-price"
-                        value="price" checked>
-                     <label class="sort-label" for="filter-price">По цене</label>
+                     <a class="sort-item sort-item-current" href="#">По цене</a>
                   </li>
                   <li class="filter-option-sort">
-                     <input class="visually-hidden filter-input-sort" type="radio" name="sort" id="filter-type"
-                        value="type">
-                     <label class="sort-label" for="filter-type">По типу</label>
+                     <a class="sort-item" href="#">По типу</a>
                   </li>
                   <li class="filter-option-sort">
-                     <input class="visually-hidden filter-input-sort" type="radio" name="sort" id="filter-name"
-                        value="name">
-                     <label class="sort-label" for="filter-name">По названию</label>
+                     <a class="sort-item" href="#">По названию</a>
                   </li>
                </ul>
-               <button type="button" aria-label="Вниз">Вниз</button>
-               <button type="button" aria-label="Вверх">Вверх</button>
+               <button class="button-dir button-dir-down" type="button" aria-label="Вверх"></button>
+               <button class="button-dir button-dir-up" type="button" aria-label="Вниз"></button>
             </div>
             <ul class="catalog-list">
                <li class="catalog-item">
                   <article class="item">
-                     
+
                      <img src="img/img-sedona.jpg" alt="Изображение проекта «Sedona»" width="358" height="578">
                      <div class="item-content">
                         <h3><a class="item-title" href="#">Sedona</a></h3>
@@ -185,17 +203,17 @@
       <section class="footer-contacts">
          <h2 class="visually-hidden">Как нас найти</h2>
          <div class="footer-contacts-wrapper">
-           <img class="map" src="img/map-1.png" alt="Карта" width="1440" height="416">
-           <img class="map-marker" src="img/map-marker.png" alt="Маркер для карты" width="231" height="190">
-           <div class="container">
-             <div class="contacts-text">
-               <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-               <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-               <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-               <a class="button" href="#">Напишите нам</a>
-             </div>
-         </div>
-       </section>
+            <img class="map" src="img/map-1.png" alt="Карта" width="1440" height="416">
+            <img class="map-marker" src="img/map-marker.png" alt="Маркер для карты" width="231" height="190">
+            <div class="container">
+               <div class="contacts-text">
+                  <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+                  <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                  <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                  <a class="button" href="#">Напишите нам</a>
+               </div>
+            </div>
+      </section>
       <section class="footer-social container">
          <h2 class="visually-hidden">Социальные сети</h2>
          <div class="footer-social-wrapper">
