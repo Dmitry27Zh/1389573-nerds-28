@@ -49,15 +49,25 @@
     --basic-pagination-gray: #DBDBDB;
     --basic-social-gray:
     #e1e1e1;
+    --basic-social-discount-gray: #444444
     --basic-dark-gray: #666666;
     --basic-input-label-gray: #4D4D4D;
     --basic-white: #ffffff;
+    --basic-white-opacity: rgba(255, 255, 255, 0.3);
     --basic-black: #000000;
+    --basic-black-opacity-10: rgba(0, 0, 0, 0.1);
+    --basic-black-opacity-15: rgba(0, 0, 0, 0.15);
+    --basic-black-opacity-30: rgba(0, 0, 0, 0.3);
+    --basic-item-shadow: rgba(0, 1, 1, 0.25);
     --basic-red: #FB565A;
     --basic-medium-red: #E74246;
     --basic-dark-red: #D7373B;
     --basic-green: #00CA74;
+    --basic-medium-green: #00BC6C;
+    --basic-dark-green: #00AA62;
     --basic-yellow: #EFC849;
+    --basic-medium-yellow: #EAB534;
+    --basic-dark-yellow: #E5A722;
     --basic-dark-blue: #283136;
  }
 
@@ -347,7 +357,7 @@
 
 .button:active {
    background-color: var(--basic-dark-red);
-   color: rgba(255, 255, 255, 0.3);
+   color: var(--basic-white-opacity);
 }
 
 .button-service {
@@ -362,20 +372,22 @@
    background-color: var(--basic-yellow);
 }
 
-.button-service-green:hover {
-   background-color: #00BC6C;;
+.button-service-green:hover,
+.button-service-green:focus {
+   background-color: var(--basic-medium-green);
 }
 
 .button-service-green:active {
-   background-color: #00AA62;
+   background-color: var(--basic-dark-green);
 }
 
-.button-service-yellow:hover {
-   background-color: #EAB534;
+.button-service-yellow:hover,
+.button-service-yellow:focus {
+   background-color: var(--basic-medium-yellow);
 }
 
 .button-service-yellow:active {
-   background-color: #E5A722;
+   background-color: var(--basic-dark-yellow);
 }
 
 /* about-us */
@@ -600,7 +612,7 @@
    border: 8px solid var(--basic-white);
    background-color: var(--basic-range-toggle-gray);
    border-radius: 50%;
-   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 2px 1px var(--basic-black-opacity-15);
    position: absolute;
    top: 31px;
    left: 0;
@@ -619,7 +631,6 @@
 
 .price-controls input {
    font: inherit;
-   font-size: inherit;
    text-align: center;
    width: 80px;
    background-color: var(--basic-gray);
@@ -715,7 +726,7 @@
 
 .button-gray:active {
    background-color: var(--basic-button-gray-active);
-   color: rgba(0, 0, 0, 0.3);
+   color: var(--basic-black-opacity-30);
 }
 
 /* catalog */
@@ -835,7 +846,7 @@
    width: 358px;
    height: 578px;
    display: block;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: 1px solid var(--basic-black-opacity-10);
    border-radius: 0px 0px 5px 5px;
 }
 
@@ -856,7 +867,7 @@
 }
 
 .item:hover {
-   box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+   box-shadow: 0px 6px 15px var(--basic-item-shadow);
    border-radius: 0px 0px 5px 5px;
 }
 
@@ -976,6 +987,7 @@
 
 .tel {
    display: inline-block;
+   vertical-align: top;
    margin-top: 20px;
 }
 
@@ -1032,7 +1044,7 @@
 
 .social-discount {
    line-height: 22px;
-   color: #444444;
+   color: var(--basic-social-discount-gray);
 }
 
 /* Modal */
