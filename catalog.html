@@ -127,8 +127,7 @@
             </div>
             <ul class="catalog-list">
                <li class="catalog-item">
-                  <article class="item">
-
+                  <article class="item" tabindex="0">
                      <img src="img/img-sedona.jpg" alt="Изображение проекта «Sedona»" width="358" height="578">
                      <div class="item-content">
                         <h3><a class="item-title" href="#">Sedona</a></h3>
@@ -138,7 +137,7 @@
                   </article>
                </li>
                <li class="catalog-item">
-                  <article class="item">
+                  <article class="item" tabindex="0">
                      <img src="img/img-pink.jpg" alt="Изображение проекта «Pink»" width="358" height="578">
                      <div class="item-content">
                         <h3><a class="item-title" href="#">Pink App</a></h3>
@@ -148,7 +147,7 @@
                   </article>
                </li>
                <li class="catalog-item">
-                  <article class="item">
+                  <article class="item" tabindex="0">
                      <img src="img/img-barbershop.jpg" alt="Изображение проекта «Barbershop Borodinski»" width="358"
                         height="578">
                      <div class="item-content">
@@ -159,7 +158,7 @@
                   </article>
                </li>
                <li class="catalog-item">
-                  <article class="item">
+                  <article class="item" tabindex="0">
                      <img src="img/img-mishka.jpg" alt="Изображение проекта «Mishka»" width="358" height="578">
                      <div class="item-content">
                         <h3><a class="item-title" href="#">MISHKA</a></h3>
@@ -169,7 +168,7 @@
                   </article>
                </li>
                <li class="catalog-item">
-                  <article class="item">
+                  <article class="item" tabindex="0">
                      <img src="img/img-aplus.jpg" alt="Изображение проекта «Aplus»" width="358" height="578">
                      <div class="item-content">
                         <h3><a class="item-title" href="#">A Plus</a></h3>
@@ -179,11 +178,52 @@
                   </article>
                </li>
                <li class="catalog-item">
-                  <article class="item">
+                  <article class="item" tabindex="0">
                      <img src="img/img-kvast.jpg" alt="Изображение проекта «Kvast»" width="358" height="578">
                      <div class="item-content">
                         <h3><a class="item-title" href="#">КВАСТ</a></h3>
                         <p class="item-description">Промо-сайт производителя крафтового кваса</p>
+                        <button class="button item-button" type="button">9900</button>
+                     </div>
+                  </article>
+               </li>
+               <li class="catalog-item">
+                  <article class="item" tabindex="0">
+                     <img src="img/img-pink.jpg" alt="Изображение проекта «Pink»" width="358" height="578">
+                     <div class="item-content">
+                        <h3><a class="item-title" href="#">Pink App</a></h3>
+                        <p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
+                        <button class="button item-button" type="button">9900</button>
+                     </div>
+                  </article>
+               </li>
+               <li class="catalog-item">
+                  <article class="item" tabindex="0">
+                     <img src="img/img-barbershop.jpg" alt="Изображение проекта «Barbershop Borodinski»" width="358"
+                        height="578">
+                     <div class="item-content">
+                        <h3><a class="item-title" href="#">Barbershop</a></h3>
+                        <p class="item-description">Сайт салона красоты. Для мужчин, да.</p>
+                        <button class="button item-button" type="button">9900</button>
+                     </div>
+                  </article>
+               </li>
+               <li class="catalog-item">
+                  <article class="item" tabindex="0">
+                     <img src="img/img-mishka.jpg" alt="Изображение проекта «Mishka»" width="358" height="578">
+                     <div class="item-content">
+                        <h3><a class="item-title" href="#">MISHKA</a></h3>
+                        <p class="item-description">Интернет-магазин вязаных игрушек</p>
+                        <button class="button item-button" type="button">9900</button>
+                     </div>
+                  </article>
+               </li>
+               <li class="catalog-item">
+                  <article class="item" tabindex="0">
+                     <img src="img/img-aplus.jpg" alt="Изображение проекта «Aplus»" width="358" height="578">
+                     <div class="item-content">
+                        <h3><a class="item-title" href="#">A Plus</a></h3>
+                        <p class="item-description">Лендинг курсов повышения квалификации</p>
                         <button class="button item-button" type="button">9900</button>
                      </div>
                   </article>
@@ -255,6 +295,27 @@
          </div>
       </section>
    </footer>
+   <section class="modal">
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="message" action="https://echo.htmlacademy.ru" method="post">
+         <div class="message-item-line">
+            <p class="message-item">
+               <label class="modal-label" for="message-user-name">Ваше имя:</label>
+               <input type="text" id="message-user-name" name="user-name" placeholder="Имя Фамилия">
+            </p>
+            <p class="message-item">
+               <label class="modal-label" for="message-user-email">Ваш email:</label>
+               <input type="email" id="message-user-email" name="user-email" placeholder="email@example.com">
+            </p>
+         </div>
+         <p class="message-item">
+            <label class="modal-label" for="message-text">Текст письма:</label>
+            <textarea name="text" id="message-text" placeholder="В свободной форме"></textarea>
+         </p>
+         <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+   </section>
 </body>
 
 </html>
