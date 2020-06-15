@@ -616,12 +616,14 @@
 .range-controls .scale {
    height: 2px;
    background-color: var(--basic-range-gray);
+   
 }
 
 .range-controls .bar {
    width: 70%;
    height: 2px;
    background-color: var(--basic-range-bar-green);
+   width: 30%; margin-left: 20%;
 }
 
 .range-controls .toggle {
@@ -635,6 +637,14 @@
    top: 31px;
    left: 0;
    cursor: pointer;
+}
+
+.toogle .toggle-min {
+   left: 20%;
+}
+
+.toogle .toggle-max {
+   left: 50%;
 }
 
 .price-controls {
